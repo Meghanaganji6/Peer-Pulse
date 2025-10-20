@@ -11,6 +11,8 @@ function Navbar() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/dashboard">Dashboard</Link></li>
           <li><Link to="/admin">Admin</Link></li>
+           <li><Link to="/">profile</Link></li>
+             <li><Link to="/topics">Topics</Link></li>
         </ul>
       </div>
     </nav>

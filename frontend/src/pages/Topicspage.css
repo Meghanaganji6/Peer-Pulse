@@ -1,0 +1,83 @@
+.topics-page {
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.topics-page h1 {
+  font-size: 32px;
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+.topics-subtext {
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+.topics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.topic-card {
+  background: #1e1e1e;
+  border-radius: 14px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00e5ff;
+}
+
+.topic-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.topic-card p {
+  color: #aaa;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.vote-btn,
+.comment-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.vote-btn {
+  background-color: #00e5ff;
+  color: #121212;
+}
+
+.comment-btn {
+  background-color: #ff4081;
+  color: white;
+}
+
+.vote-btn:hover {
+  background-color: #4ef4ff;
+}
+
+.comment-btn:hover {
+  background-color: #ff5c9b;
+}
