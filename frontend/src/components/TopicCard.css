@@ -1,0 +1,39 @@
+.topic-card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 64, 129, 0.3);
+}
+
+.topic-card h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.topic-card p {
+  color: #bbbbbb;
+  margin-bottom: 15px;
+}
+
+.view-btn {
+  background: #00e5ff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #ff4081;
+  color: #fff;
+  box-shadow: 0 0 8px #ff4081;
+}

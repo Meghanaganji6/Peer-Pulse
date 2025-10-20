@@ -1,0 +1,19 @@
+.dashboard {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.dashboard h2 {
+  color: #ff4081;
+  text-shadow: 0 0 8px #ff4081;
+}
+
+.chart-placeholder {
+  margin: 40px auto;
+  background: #1e1e1e;
+  padding: 50px;
+  border-radius: 12px;
+  max-width: 800px;
+  color: #aaa;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+}

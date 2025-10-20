@@ -1,0 +1,41 @@
+.admin {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.admin h2 {
+  color: #00e5ff;
+  margin-bottom: 20px;
+}
+
+.admin form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.admin input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  width: 250px;
+  background: #1e1e1e;
+  color: #fff;
+  outline: 2px solid #00e5ff;
+}
+
+.admin button {
+  background: #ff4081;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin button:hover {
+  background: #00e5ff;
+  color: #121212;
+}

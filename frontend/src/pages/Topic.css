@@ -1,0 +1,11 @@
+.topic-page {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.topic-page h2 {
+  font-size: 2rem;
+  color: #00e5ff;
+  text-shadow: 0 0 10px #00e5ff;
+  margin-bottom: 30px;
+}
