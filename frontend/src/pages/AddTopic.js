@@ -1,7 +1,7 @@
 import React from "react";
-import "./Admin.css";
+import "./AddTopic.css";
 
-function Admin() {
+function AddTopic() {
   return (
     <div className="admin">
       <h2>Admin Panel 🛠️</h2>
@@ -13,4 +13,4 @@ function Admin() {
   );
 }
 
-export default Admin;
+export default AddTopic;

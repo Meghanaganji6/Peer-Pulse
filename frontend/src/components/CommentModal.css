@@ -28,7 +28,7 @@
   right: 16px;
   background: none;
   border: none;
-  color: #ff4081;
+  color: #F97272;
   font-size: 20px;
   cursor: pointer;
 }
@@ -59,7 +59,7 @@
 }
 
 .comment-input button {
-  background-color: #ff4081;
+  background-color: #F97272;
   border: none;
   border-radius: 8px;
   padding: 10px 16px;
@@ -70,7 +70,7 @@
 }
 
 .comment-input button:hover {
-  background-color: #ff5c9b;
+  background-color: #F97272;
 }
 
 .comment-list {

@@ -1,7 +1,7 @@
 .topic-card {
   background: #1e1e1e;
   border-radius: 12px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
   transition: 0.3s;
   text-align: center;
@@ -33,7 +33,7 @@
 }
 
 .view-btn:hover {
-  background: #ff4081;
+  background: #F97272;
   color: #fff;
-  box-shadow: 0 0 8px #ff4081;
+  box-shadow: 0 0 8px #F97272;
 }

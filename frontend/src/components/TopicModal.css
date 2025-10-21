@@ -1,0 +1,110 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-box {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 20px;
+  width: 600px;
+  max-width: 70%;
+  margin-top: 25px;
+  max-height: 80vh;           /* limits modal height to viewport */
+  overflow-y: auto;           /* enables vertical scroll */
+  box-shadow: 0 0 30px rgba(0,229,255,0.3);
+  color: #fff;
+  position: relative;
+
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE and Edge */
+}
+
+.modal-box::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  color: #ff4081;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-chart {
+  margin-top: 20px;
+}
+
+.modal-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bar-fill {
+  height: 10px;
+  background: linear-gradient(90deg, #00e5ff, #ff4081);
+  border-radius: 5px;
+  margin: 0 10px;
+  flex: 1;
+  transition: width 0.5s ease;
+}
+
+.comment-section {
+  margin-top: 25px;
+}
+
+.comment-input {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #2a2a2a;
+  color: white;
+}
+
+.comment-input button {
+  background: #00e5ff;
+  border: none;
+  color: #121212;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.comment-card {
+  background: #2a2a2a;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.comments-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+
+  /* Hide scrollbar across browsers */
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE and Edge */
+}
+
+.comments-list::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;        /* Chrome, Safari */
+}
