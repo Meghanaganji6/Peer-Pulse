@@ -1,3 +1,31 @@
+body {
+  background: #121212;
+  background-image: radial-gradient(circle at 20% 30%, #00e5ff22 0%, transparent 40%),
+                    radial-gradient(circle at 80% 70%, #ff408122 0%, transparent 40%),
+                    radial-gradient(circle at 50% 50%, #ffffff11 0%, transparent 30%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+/* .add-topic-page {
+  background-color: #121212;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='5' stroke='%2300e5ff' stroke-width='2' fill='none'/%3E%3Crect x='60' y='60' width='10' height='10' stroke='%23ff4081' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='20' x2='90' y2='30' stroke='%2300e5ff' stroke-width='2'/%3E%3Cline x1='90' y1='20' x2='80' y2='30' stroke='%2300e5ff' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  min-height: 100vh;
+  padding-top: 100px;
+} */
+.admin {
+  background-color: #121212;
+  background-image:
+    radial-gradient(circle at 20% 30%, #00e5ff22 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, #ff408122 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, #ffffff11 0%, transparent 30%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
 .admin {
   padding-top: 100px;
   text-align: center;
@@ -5,26 +33,41 @@
 
 .admin h2 {
   color: #00e5ff;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 28px;
 }
 
-.admin form {
+form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 15px;
+  background: rgba(30, 30, 30, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #00e5ff;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.admin input {
+select, input {
   padding: 10px 15px;
   border: none;
   border-radius: 8px;
-  width: 250px;
+  width: 100%;
   background: #1e1e1e;
   color: #fff;
   outline: 2px solid #00e5ff;
 }
 
-.admin button {
+.button-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
   background: #F97272;
   border: none;
   border-radius: 8px;
@@ -35,7 +78,49 @@
   transition: 0.3s;
 }
 
-.admin button:hover {
+button:hover {
   background: #00e5ff;
   color: #121212;
+}
+
+.error-msg {
+  color: #ff4081;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.success-msg {
+  color: #00ff99;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-box {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 0 30px rgba(0,229,255,0.3);
+  color: #fff;
+  text-align: left;
+}
+
+.modal-box h3 {
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+
+.modal-box button {
+  margin-top: 15px;
+  margin-right: 10px;
 }
