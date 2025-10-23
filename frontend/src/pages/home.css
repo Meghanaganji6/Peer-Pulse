@@ -1,5 +1,6 @@
 .home {
   padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 .hero {
@@ -39,20 +40,124 @@
   background: #00e5ff;
   box-shadow: 0 0 10px #00e5ff;
 }
+.mood-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
 
-.topics-section {
-  max-width: 1100px;
+.mood-game,
+.mood-meter {
+  flex: 1 1 400px;
+  max-width: 500px;
+/* 👈 Set a consistent minimum height */
+  display: flex;
+  flex-direction: column;
+   padding: 30px;
+
+  justify-content: space-between; /* Optional: balances content vertically */
+}
+.mood-meter {
+  max-width: 500px;
   margin: 0 auto;
   padding: 30px;
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
 }
 
-.topics-section h3 {
-  margin-bottom: 25px;
+.mood-meter h3 {
   color: #00e5ff;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
-.topics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+.mood-bar {
+  margin-bottom: 20px;
+}
+
+.mood-bar label {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.mood-meter .bar {
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  border-radius: 6px;
+  padding-left: 10px;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+  transition: width 0.5s ease;
+}
+
+.bar.happy {
+  background: linear-gradient(to right, #00e5ff, #00bcd4);
+}
+
+.bar.neutral {
+  background: linear-gradient(to right, #888, #aaa);
+}
+
+.bar.frustrated {
+  background: linear-gradient(to right, #F97272, #ff4081);
+}
+
+.mood-game {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 40px;
+ min-height: 230px;
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+  text-align: center;
+}
+
+.mood-game h3 {
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+
+.mood-game p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.emoji-picker {
+  display: flex;
+  justify-content: center;
   gap: 20px;
+}
+
+.emoji-picker button {
+  font-size: 2rem;
+  background: transparent;
+  border: 2px solid #00e5ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+
+  display: flex;              /* 👈 Center emoji */
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji-picker button:hover {
+  background: #00e5ff;
+  color: #121212;
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+.mood-confirm {
+  margin-top: 20px;
+  color: #00ff99;
+  font-weight: 500;
 }
